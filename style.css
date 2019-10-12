@@ -1,0 +1,11 @@
+.h1 {
+    font-size: 100px; 
+}
+
+#profile {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    height: 40%; 
+    width: 40%;
+}
