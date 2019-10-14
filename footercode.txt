@@ -1,0 +1,25 @@
+<!--Footer-->
+<div class="footer card text-white bg-dark mb-3">
+    <div class="card-body">
+    <div class="footer">
+      <h5 class="card-title" align="center">Project Made By Josh Houlding</h5>
+      <div class="row justify-content-center">
+      <!--Linkedin-->
+      <div class="linkedin">
+      <a href="www.linkedin.com/in/joshhoulding"><i class="fab fa-linkedin"></i></a>
+      <h6>LinkedIn</h6>
+      </div>
+      <!--End of Linkedin-->
+      <!--Github-->
+      <div class="github">
+      <a href="https://github.com/jhould007"><i class="fab fa-github"></i></a>
+      <h6>Github</h6>
+      </div>
+      <!--End of Github-->
+      </div>
+      </div>
+    </div>
+  </div>
+  <!--End of footer-->
+    </body>
+</html>
