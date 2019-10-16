@@ -6,6 +6,10 @@
     font-weight: lighter; 
 }
 
+.h2 {
+    margin: 25px; 
+}
+
 #profile {
     display: block; 
     margin-left: auto; 
@@ -19,9 +23,12 @@
     font-size: 24px; 
 }
 
-#icons {
-    background-color: #e6e6e6; 
+#content {
+    background: #e8e8e8;
     color: black; 
     margin-top: 50px; 
     border-radius: 10px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
 }
+
