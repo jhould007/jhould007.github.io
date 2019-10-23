@@ -42,3 +42,12 @@ body {
     padding-bottom: 10px; 
 }
 
+#contactcontent {
+    background: #e8e8e8;
+    color: black; 
+    margin-top: 50px; 
+    border-radius: 10px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+}
+
