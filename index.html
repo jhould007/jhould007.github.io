@@ -2,46 +2,85 @@
 
 <head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112752090-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112752090-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-112752090-3');
-</script>
-<!--End of Google Analytics-->
+    gtag('config', 'UA-112752090-3');
+  </script>
+  <!--End of Google Analytics-->
 
   <title>Josh's Personal Website</title>
-  <!--Bootstrap CSS-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <!--End of Bootstrap CSS-->
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!--End of Bootstrap-->
 
-  <!--FontAwesome CSS-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <!--End of FontAwesome CSS-->
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!--End of FontAwesome-->
 
-  <!--Bootstrap JS-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <!--End of Bootstrap JS-->
+  <!--Materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!--End of Materialize-->
 
   <!--Style Sheet-->
   <link rel="stylesheet" type="text/css" href="style.css">
-<!--End of Style Sheet-->
-  </head>
+  <!--End of Style Sheet-->
 
-<body>
+  <!--Start of custom scripts-->
+  <script>
+    function setDarkTheme() {
+    document.body.style.backgroundColor = "black"; 
+    document.getElementById("title").style.color = "white"; 
+    document.getElementById("description").style.color = "white"; 
+    document.getElementById("content").style.backgroundColor = "rgb(43, 56, 71)"; 
+    var h2 = document.getElementsByTagName("h2"); 
+    var h4 = document.getElementsByTagName("h4"); 
+    var h6 = document.getElementsByTagName("h6"); 
+    for(var i = 0; i < h2.length; i++) {
+      h2[i].style.color = "white"; 
+    }
+    for(var i = 0; i < h4.length; i++) {
+      h4[i].style.color = "white"; 
+    }
+    for(var i = 0; i < h6.length; i++) {
+      h6[i].style.color = "white"; 
+    }
 
-<div class="container">
+    //document.getElementById("toggle").className = "btn btn-light"; 
+  }
+  </script>
+  
+</head>
 
-<!--col-xs-12 col-md-12 col-lg-12 (column scaling for non-icon elements)-->
+<body id="body">
 
-  <h1 class="h1" align="center">Hey, I'm Josh.</h1>
+  <div class="container">
+
+    <h1 class="h1" id="title" align="center">Hey, I'm Josh.</h1>
+    
+    <button type="button" class="btn btn-dark" id="toggle" onclick="setDarkTheme()">
+      <div id="nightmode">
+        <i class="fas fa-moon"></i>
+      </div>
+    </button>    
 
     <img id="profile" src="profilecircular.png">
 
@@ -53,30 +92,31 @@
 
     <div id="content">
 
-<h2 class="h2">Check these out!</h2>
+      <h2 class="h2">Check these out!</h2>
 
-<!--Icon row-->
-<div class="row">
+      <!--Icon row-->
+      <div class="row">
 
-<!--Linkedin-->
-<div class="linkedin col-xs-6 col-sm-6 col-md-6 col-lg-3">
-    <a href="https://www.linkedin.com/in/joshuahoulding/"><i class="fab fa-linkedin"></i></a>
-    <h6>LinkedIn</h6>
-    </div>
-    <!--End of Linkedin-->
-    <!--Github-->
-    <div class="github col-xs-6 col-sm-6 col-md-6 col-lg-3">
-    <a href="https://github.com/jhould007"><i class="fab fa-github"></i></a>
-    <h6>Github</h6>
-    </div>
-    <!--End of Github-->
-    <!--Resume-->
-    <div class="resume col-xs-6 col-sm-6 col-md-6 col-lg-3">
-        <a href="JoshuaHoulding'sResume.docx"><i class="fas fa-file"></i></a>
-        <h6>Resume</h6>
+        <!--Linkedin-->
+        <div class="linkedin col-xs-6 col-sm-6 col-md-6 col-lg-3">
+          <a href="https://www.linkedin.com/in/joshuahoulding/"><i class="fab fa-linkedin"></i></a>
+          <h6>LinkedIn</h6>
+        </div>
+        <!--End of Linkedin-->
+        <!--Github-->
+        <div class="github col-xs-6 col-sm-6 col-md-6 col-lg-3">
+          <a href="https://github.com/jhould007"><i class="fab fa-github"></i></a>
+          <h6>Github</h6>
+        </div>
+        <!--End of Github-->
+        <!--Resume-->
+        <div class="resume col-xs-6 col-sm-6 col-md-6 col-lg-3">
+          <a href="JoshuaHoulding'sResume.docx"><i class="fas fa-file"></i></a>
+          <h6>Resume</h6>
         </div>
         <!--End of Resume-->
         <!--Email-->
+<<<<<<< HEAD
 <script>function alert(){alert("jdh102040 at gmail dot com")}</script>
 
 <div class="email col-xs-6 col-sm-6 col-md-6 col-lg-3">
@@ -84,28 +124,39 @@
   <h6>Email</h6>
   </div>
   <!--End of Email-->
+=======
+        <div class="email col-xs-6 col-sm-6 col-md-6 col-lg-3">
+          <a href="mailto:jdh102040@gmail.com? subject=subject"><i class="fas fa-envelope"></i></a>
+          <h6>Email</h6>
+        </div>
+        <!--End of Email-->
+>>>>>>> 84c662a6b0636b2ce0e7af0ac671717d3f34b9f2
 
-</div>
-<!--End of icon row-->
+      </div>
+      <!--End of icon row-->
 
-<h2 class="h2">A few personal projects of mine...</h2>
+      <h2 class="h2">A few personal projects of mine...</h2>
 
-<br>
+      <br>
 
-<h4 class="h4">Pong</h4>
-<h6 class="h6"><a href="https://github.com/jhould007/Pong"><i class="fab fa-github"></i> Check out on Github</a></h6>
-<h6><a href="Build.zip"><i class="fas fa-cloud-download-alt"></i> Download</a> and try it for yourself! Just unzip the file, run the .exe file and you're good to go!</h6>
+      <h4 class="h4">Pong</h4>
+      <h6 class="h6"><a href="https://github.com/jhould007/Pong"><i class="fab fa-github"></i> Check out on Github</a>
+      </h6>
+      <h6><a href="Build.zip"><i class="fas fa-cloud-download-alt"></i> Download</a> and try it for yourself! Just unzip
+        the file, run the .exe file and you're good to go!</h6>
 
-<br>
+      <br>
 
-<h4 class="h4">Unit Converter</h4>
-<h6 class="h6"><a href="https://github.com/jhould007/unit-converter"><i class="fab fa-github"></i> Check out on Github</a></h6>
-<h6><a href="https://jhould007-unit-converter.herokuapp.com/"><i class="fas fa-globe"></i> Check out online</a></h6>
+      <h4 class="h4">Unit Converter</h4>
+      <h6 class="h6"><a href="https://github.com/jhould007/unit-converter"><i class="fab fa-github"></i> Check out on
+          Github</a></h6>
+      <h6><a href="https://jhould007-unit-converter.herokuapp.com/"><i class="fas fa-globe"></i> Check out online</a>
+      </h6>
 
 
 
     </div>
-  
-</div>
+
+  </div>
 
 </body>>
